@@ -1,23 +1,36 @@
 body {
   font-family: 'Libre Baskerville', serif;
-  color: #3a3a3a;
-  background-color: #f9f6f2;
-}
-
-.gold-divider {
-  border-top: 2px solid #c8a97e;
-  width: 60%;
-  margin: 2rem auto;
+  background-color: #f8f7f4;
+  color: #333;
 }
 
 .romantic {
   font-family: 'Great Vibes', cursive;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #c8a97e;
 }
 
-.hero-section .overlay-text {
-  background: rgba(0, 0, 0, 0.4);
-  padding: 2rem;
-  border-radius: 10px;
+.verse {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1rem;
+  color: #666;
+}
+
+.gold-divider {
+  border-top: 2px solid #c8a97e;
+  width: 60px;
+  margin: 1rem auto;
+}
+
+.nav-tabs .nav-link {
+  color: #333;
+  font-weight: 500;
+  font-family: 'Libre Baskerville', serif;
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  color: #c8a97e;
+  border-bottom: 2px solid #c8a97e;
+  background-color: transparent;
 }

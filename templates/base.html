@@ -5,43 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Adriana & David</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Libre+Baskerville&family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Fonts: Romantic + Editorial Feel -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap + Icons -->
+  <!-- Bootstrap & Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>
+<body class="bg-light text-dark">
 
-    <!-- Nav Tabs -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
-    <a class="navbar-brand romantic" href="#">Adriana & David</a>
-    <div class="collapse navbar-collapse justify-content-end">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="{{ url_for('home') }}">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ url_for('event_info') }}">Event Info</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ url_for('rsvp') }}">RSVP</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ url_for('registry') }}">Registry</a></li>
-      </ul>
-    </div>
+  <!-- Header / Logo Section -->
+  <header class="text-center py-5">
+    <h1 class="romantic">Adriana & David</h1>
+    <p class="verse fst-italic">“We love because He first loved us.” – 1 John 4:19</p>
+    <hr class="gold-divider">
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="nav justify-content-center nav-tabs gold-tabs mb-5 border-0">
+    <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{{ url_for('home') }}">Home</a>
+    <a class="nav-link {% if request.path == '/event-info' %}active{% endif %}" href="{{ url_for('event_info') }}">Event Info</a>
+    <a class="nav-link {% if request.path == '/rsvp' %}active{% endif %}" href="{{ url_for('rsvp') }}">RSVP</a>
+    <a class="nav-link {% if request.path == '/registry' %}active{% endif %}" href="{{ url_for('registry') }}">Registry</a>
   </nav>
 
-  <section class="hero-section text-center text-light d-flex align-items-center justify-content-center" style="background-image: url('/static/img/yourphoto.jpg'); height: 90vh; background-size: cover; background-position: center;">
-    <div class="overlay-text">
-      <h1 class="display-4">These Are the Moments</h1>
-      <h2 class="fw-light">You'll Never Forget</h2>
-    </div>
-  </section>
-
-
-  <!-- Page Content -->
-  <main class="container mt-4">
+  <!-- Main Page Content -->
+  <main class="container">
     {% block content %}{% endblock %}
   </main>
 
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5 small text-muted">
+    <hr class="gold-divider">
+    <p>&copy; {{ current_year | default(2025) }} Adriana & David. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
