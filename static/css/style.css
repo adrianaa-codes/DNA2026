@@ -1,0 +1,28 @@
+body {
+  background-color: #fffdf8;
+  color: #3e3e3e;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.romantic {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #caa14a;
+}
+
+.verse {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #7b6c4b;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.gold-tabs .nav-link {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.section-title {
+  color: #caa14a;
+  font-weight: bold;
+  font-family: 'Libre Baskerville', serif;
+}
