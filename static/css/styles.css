@@ -1,0 +1,23 @@
+body {
+  background-color: #fffdf8;
+  color: #3e3e3e;
+  font-family: 'Playfair Display', serif;
+}
+
+.romantic {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #caa14a;
+}
+
+.gold-divider {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, #d4af37, transparent);
+  margin: 1rem 0;
+}
+
+.section-title {
+  color: #caa14a;
+  font-weight: bold;
+}
