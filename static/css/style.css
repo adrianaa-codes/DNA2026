@@ -1,28 +1,17 @@
 body {
-  background-color: #fffdf8;
-  color: #3e3e3e;
   font-family: 'Libre Baskerville', serif;
+  color: #3a3a3a;
+  background-color: #f9f6f2;
+}
+
+.gold-divider {
+  border-top: 2px solid #c8a97e;
+  width: 60%;
+  margin: 2rem auto;
 }
 
 .romantic {
   font-family: 'Great Vibes', cursive;
-  font-size: 3rem;
-  color: #caa14a;
-}
-
-.verse {
-  font-size: 1.1rem;
-  font-style: italic;
-  color: #7b6c4b;
-  font-family: 'Libre Baskerville', serif;
-}
-
-.gold-tabs .nav-link {
-  font-family: 'Libre Baskerville', serif;
-}
-
-.section-title {
-  color: #caa14a;
-  font-weight: bold;
-  font-family: 'Libre Baskerville', serif;
+  font-size: 2.5rem;
+  color: #c8a97e;
 }
