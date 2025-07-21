@@ -26,7 +26,7 @@
   <!-- Nav Tabs -->
   <nav class="nav justify-content-center nav-tabs gold-tabs mb-4">
     <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{{ url_for('home') }}">Home</a>
-<!--    <a class="nav-link {% if request.path == '/our-story' %}active{% endif %}" href="{{ url_for('our_story') }}">Our Story</a>-->
+{# <a class="nav-link {% if request.path == '/our-story' %}active{% endif %}" href="{{ url_for('our_story') }}">Our Story</a> #}
     <a class="nav-link {% if request.path == '/event-info' %}active{% endif %}" href="{{ url_for('event_info') }}">Event Info</a>
     <a class="nav-link {% if request.path == '/rsvp' %}active{% endif %}" href="{{ url_for('rsvp') }}">RSVP</a>
     <a class="nav-link {% if request.path == '/registry' %}active{% endif %}" href="{{ url_for('registry') }}">Registry</a>
